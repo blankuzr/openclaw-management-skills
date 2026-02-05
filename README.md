@@ -13,9 +13,15 @@ load: {
     }
 
 ```
-Or, you can save these skills to your ~/openclaw/skills folder. 
+Or, you can save these skills to your `~/openclaw/skills` folder. 
 If you run multiple agents and want these skills isolated to a specific agent, place the skills pack
-in the per-agent skills folder: ~/.openclaw/<specific-agent-workspace>/skills
+in the per-agent skills folder: `~/.openclaw/<specific-agent-workspace>/skills`
+
+Then restart the gateway
+
+```
+openclaw gateway restart
+```
 
 ## Why did I make this?
 ### Models in openclaw dont know themselves (their openclaw state-of-existence) too well (unless using a larger more expensive model).
